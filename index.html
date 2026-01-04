@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday My Love ❤️</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 3em;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px white; }
+    to { text-shadow: 0 0 30px pink; }
+}
+
+img {
+    width: 250px;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff4b7d;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+<h1>🎂 Happy Birthday My Love ❤️</h1>
+<p>You are the most beautiful part of my life.</p>
+</section>
+
+<section>
+<h2>📸 Our Memories</h2>
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+</section>
+
+<section>
+<h2>💌 From My Heart</h2>
+<p>
+This website is my heart written in code.<br>
+Every smile of yours means the world to me.<br>
+I may not be perfect, but my love for you is real.<br><br>
+Happy Birthday baby ❤️
+</p>
+</section>
+
+<section>
+<button onclick="showSurprise()">🎁 Click for Surprise</button>
+<p id="surprise" class="hidden">
+I choose you. Today. Tomorrow. Always. ♾️❤️
+</p>
+</section>
+
+<audio autoplay loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
 
