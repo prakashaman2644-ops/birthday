@@ -84,16 +84,33 @@ I choose you. Today. Tomorrow. Always. ♾️❤️
 </p>
 </section>
 
-<audio autoplay loop>
+<audio id="bgMusic" loop>
   <source src="song.mp3" type="audio/mpeg">
 </audio>
 
+<button onclick="playMusic()" style="
+margin-top:20px;
+padding:12px 22px;
+border:none;
+border-radius:25px;
+background:white;
+color:#ff4b7d;
+font-size:16px;
+cursor:pointer;">
+▶️ Play Our Song
+</button>
+
 <script>
 function showSurprise() {
-    document.getElementById("surprise").style.display = "block";
+  document.getElementById("surprise").style.display = "block";
+}
+
+function playMusic() {
+  document.getElementById("bgMusic").play();
 }
 </script>
 
 </body>
 </html>
+
 
